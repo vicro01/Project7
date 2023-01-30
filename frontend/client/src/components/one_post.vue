@@ -6,7 +6,8 @@
             <h2 id="one-post-global-title" >{{ this.post.post_title }}</h2>
             <div id="one-post-global-text" >{{ this.post.post_text}}</div> 
             <img :src="post.post_img" alt="" id="post-global-img"/>
-            <p id="one-post-global-text-username"> {{this.post.post_id}} </p>
+            <!-- took off post id -->
+            <p id="one-post-global-text-username"> {{}} </p>
             <button v-if="admin || this.post.post_id == user.id" @click="deleteOnePost()" id="btn_new_post" class="btn_delete" type="submit"> Delete </button> 
             
             <!-- //v-if="is_admin" -->
