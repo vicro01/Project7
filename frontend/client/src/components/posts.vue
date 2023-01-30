@@ -8,7 +8,7 @@
             
             <h2 id="post-global-title">{{ post.post_title}}</h2>
             <p id="post-global-text"> {{ post.post_text}} </p>
-            <img v-if="post.post_img != undefined" :src="post.post_img" alt="image" id="post-global-img"/>
+            <img v-if="post.post_img != undefined" :src="post.post_img" alt="" id="post-global-img"/>
         <router-link :to="{ name:'OnePost', params: {id: post.post_id }}">
             <button id="post-global-btn">See more</button>
         </router-link>
