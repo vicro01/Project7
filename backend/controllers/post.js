@@ -60,7 +60,6 @@ exports.deleteOnePost = (req, res, _next) => {
                 error
             });
         }
-        return res.status(200).json(result);
     });
   
   db.query(`DELETE FROM posts WHERE post_id = ${req.params.id}`, (error, result, field) => {
